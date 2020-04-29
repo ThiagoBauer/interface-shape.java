@@ -2,7 +2,7 @@ package entities;
 
 import entities.enums.Color;
 
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
 
 	private Double radius;
 
@@ -19,7 +19,7 @@ public class Circle extends Shape {
 		this.radius = radius;
 	}
 
-	public Double area() {
+	public double area() {
 		return Math.PI * radius * radius;
 	}
 }
